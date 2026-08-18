@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite_movie</title>
+</head>
+<body>
+    <!-- <h1>write "quit" to quite the game</h1> -->
+    <script>
+        const movie = "avatar"
+        let guess = prompt("enter the fav movie")
+        while((guess != movie)&&(guess != "quit")){
+            guess = prompt(" wrong guess please try again")
+        }
+        if(guess == movie){
+            console.log("!! congrats")
+        }
+        else{
+            console.log("quit")
+        }
+    </script>
+</body>
+</html>
