@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function scope</title>
+</head>
+<body>
+    <script>
+        let sum = 54 //global scope
+        function sum_cal(a,b){
+            let sum = a+b; //function scope
+            console.log(sum)
+        }
+        sum_cal(55,7)
+        console.log(sum)
+    </script>
+</body>
+</html>
