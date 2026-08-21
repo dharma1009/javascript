@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functional block lexical</title>
+</head>
+<body>
+    <script>
+        let greet = "hello" //global scope
+        function changegreet(){
+            let greet = "namaste" //function scope
+            console.log(greet) 
+            function innerfunc(){
+                console.log(greet) //lexical scope
+            }
+            innerfunc()
+        }
+        console.log(greet)
+        changegreet()
+    </script>
+</body>
+</html>
