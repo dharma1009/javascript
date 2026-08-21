@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>higher order function with return value</title>
+</head>
+<body>
+    <script>
+        function oddeven(request){
+            if(request == "odd"){
+                return function(n){
+                    console.log(!(n%2==0))
+                }
+
+            }else if(request == "even"){
+                return function(n){
+                    console.log(n%2==0)
+                }
+            }
+            else{
+                console.log("wrong answer")
+            }
+        }
+        let checkOdd = oddeven("odd");
+        checkOdd(7);   // true
+        checkOdd(8);   // false
+
+        let checkEven = oddeven("even");
+        checkEven(7);  // false
+        checkEven(8);  // true
+        
+    </script>
+</body>
+</html>
