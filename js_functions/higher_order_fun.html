@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher order function</title>
+</head>
+<body>
+    <script>
+        function mutliplegreet(func,count){
+            for(let i=1;i<=count;i++){
+                func()
+            }
+        }
+        let greet =function(){
+            console.log("hello");
+        }
+        mutliplegreet(greet,4)
+    </script>
+</body>
+</html>
