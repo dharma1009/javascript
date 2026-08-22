@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random number</title>
+</head>
+<body>
+    <h3>
+        Write a JavaScript function to generate a random number with in a range(start,end)
+    </h3>
+    <script>
+        let start=100;
+        let end=200;
+        function generateRandom(start,end)
+        {
+            let diff=end-start;
+            return Math.floor(Math.random()*diff)+start;
+        }
+        console.log(generateRandom(start, end));
+    </script>
+</body>
+</html>
