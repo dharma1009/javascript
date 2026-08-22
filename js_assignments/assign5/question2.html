@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove repeated letters</title>
+</head>
+<body>
+    <h3>
+            Write a JavaScript function to extract unique characters from a string.
+            Example:str=“abcdabcdefgggh” ans=“abcdefgh”
+
+    </h3>
+    <script>
+        let str = "abcdabcdefgggh"
+        function getunique(str){
+            let ans = ""
+            for(let i=0;i<str.length;i++){
+                let currchar = str[i]
+                if(ans.indexOf(currchar) == -1){
+                    ans+= currchar
+                }
+            }
+            return ans
+        }
+        console.log(getunique(str))
+    </script>
+</body>
+</html>
