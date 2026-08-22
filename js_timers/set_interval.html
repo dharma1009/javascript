@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set interval</title>
+</head>
+<body>
+    <script>
+        // console.log("hi there")
+        // setInterval(()=>{
+        //     console.log("javascript");
+        // },2000);
+
+        // set interval using id 
+        let id =   setInterval(()=>{
+            console.log("javascript");
+        },2000);
+        console.log(id)
+
+        let id2 =   setInterval(()=>{
+            console.log("front-end development");
+        },2000);
+        console.log(id2)
+        clearInterval(id2) //to stop paricular function
+    </script>
+</body>
+</html>
