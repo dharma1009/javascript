@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>longest country name</title>
+</head>
+<body>
+    <h3>Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output.
+        Example:country=["Australia","Germany","United States of America"]
+        output:"United States of America</h3>
+        <script>
+            let country=["Australia","Germany","United States of America"];
+            function longestNmae(country){
+                let ansidx =0;
+                for(let i=0;i<country.length;i++){
+                    let anslen = country[ansidx].length
+                    let currlen = country[i].length
+                    if(currlen>anslen){
+                        ansidx =i
+                    }
+                }
+                return country[ansidx]
+            }
+            console.log(longestNmae(country))
+        </script>
+</body>
+</html>
