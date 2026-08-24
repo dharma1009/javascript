@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for each</title>
+</head>
+<body>
+    <script>
+        // let arr =[1,2,3,4,5]
+        // let print =function(ele){
+        //     console.log(ele)
+        // }
+        // arr.forEach(print)
+        // // 
+        // let arr2 = [66,7,8,9,3]
+        // arr2.forEach(function(ele){
+        //     console.log(ele)
+        // })
+
+        // // by using arrow function
+        // let arr3 = [66,7,8,9,3]
+        // arr3.forEach((ele)=>{
+        //     console.log(ele)
+        // })
+
+        // for each using objects
+
+        let arr4 =[{
+            name :"dharma",
+            age:21,
+        },
+            {
+                name:"rahul",
+                age:23,
+            },
+                { name:"rohit",
+                    age:32,
+                },
+            ]
+            arr4.forEach((student)=>{
+                console.log(student)
+                console.log(student.age)
+            })
+    </script>
+</body>
+</html>
