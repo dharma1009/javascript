@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimunm number</title>
+</head>
+<body>
+    <script>
+        let nums = [10,20,30,40,5]
+        let min = nums.reduce((min,ele)=>{
+            if(min<ele){
+                return min
+            }
+            else{
+                return ele
+            }
+        })
+        console.log(min)
+    </script>
+</body>
+</html>
