@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+</head>
+<body>
+    <script>
+        function sum(...args){
+            for(let i=0;i<args.length;i++){
+                console.log("you have us",args[i])
+            }
+        }
+        sum(1,2,3,4,5)
+
+        function greet(greeting,...names){
+            for(let name of names){
+                console.log(`${greeting},${name}`)
+            }
+            
+        }
+        greet("hello","raj","virta","riya","Aditya")
+        // rest parameters with array
+        const numbers = [1,2,3,4,5,6,7,8,9]
+        const[first,second,...rest]=numbers
+        console.log(first)
+        console.log(second)
+        console.log(rest)
+        // rest parameter for objects
+        var person ={
+            name:"dharma",
+            age:21,
+            city:"mumbai",
+            gender:"male",
+        }
+        const{name,age,...data}=person
+        console.log(name)
+        console.log(data)
+    </script>
+</body>
+</html>
