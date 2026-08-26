@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object destructing</title>
+</head>
+<body>
+    <script>
+        var obj ={
+            name:"virat",
+            age:35,
+            city:"banglore",
+            gender:"male"
+
+        }
+        // var name  =obj.name
+        // var age = obj.age
+        // var city = obj.city
+        // console.log(name)
+        // console.log(age)
+        // console.log(city)
+
+        // new apporach
+        const {name,age,city,gender}=obj
+        console.log(name)
+        console.log(age)
+        console.log(city)
+        console.log(gender)
+
+    </script>
+</body>
+</html>
