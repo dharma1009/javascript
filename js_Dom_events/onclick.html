@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <button>clickme</button>
+    <button>clickme</button>
+    <button>clickme</button>
+    <button>clickme</button>
+    <button>clickme</button>
+    <script>
+        // let btn = document.querySelector("button")
+        // console.dir(btn)
+
+        // btn.onclick = function(){
+        //     alert("button was clicked")
+        // }
+
+        let btns = document.querySelectorAll("button");
+
+        for(btn of btns){
+            btn.onclick = syaHello;
+            btn.onmouseenter = function(){
+                console.log("you entered a button")
+            };
+            console.dir(btn)
+        }
+        function syaHello(){
+            alert("hello !")
+        }
+    </script>
+</body>
+</html>
