@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>click me</button>
+    <button>click me</button>
+    <button>click me</button>
+    <button>click me</button>
+    <button>click me</button>
+    <script>
+        let btns = document.querySelectorAll("button");
+        for(btn of btns){
+            btn.onclick = sayHello;
+            btn.onclick = sayName;
+            btn.addEventListener("click",sayHello);
+            btn.addEventListener("click",sayName);
+        }
+
+        function sayHello(){
+            alert("hello !");
+        }
+
+        function sayName(){
+            alert("apna college");
+        }
+    </script>
+</body>
+</html>
