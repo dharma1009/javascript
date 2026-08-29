@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this event listeners</title>
+</head>
+<body>
+    <h1>Use of 'this' in Event listeners</h1>
+    <h3>let's demo it on elements</h3>
+    <p>This is a simple paragraph</p>
+    <button>click me</button>
+    <script>
+        let btn = document.querySelector("button");
+        let p = document.querySelector("p");
+        let h1 = document.querySelector("h1");
+        let h3 = document.querySelector("h3");
+
+
+        function changecolor(){
+            console.dir(this.innerText);
+            this.style.backgroundColor ="blue";
+        }
+
+        btn.addEventListener("click",changecolor);
+
+        p.addEventListener("click",changecolor);
+
+        h1.addEventListener("click",changecolor);
+
+        h3.addEventListener("click",changecolor)
+    
+    </script>
+</body>
+</html>
