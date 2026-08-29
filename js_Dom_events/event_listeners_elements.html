@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listeners for elements</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>This is paragraph</p>
+    <div class="box">this is div</div>
+    <script>
+        let p = document.querySelector("p");
+        p.addEventListener("click",function(){
+            console.log("para was clicked")
+        })
+
+        let box = document.querySelector(".box");
+        box.addEventListener("mouseenter",function(){
+            console.log("mouse inside box")
+        })
+    </script>
+</body>
+</html>
