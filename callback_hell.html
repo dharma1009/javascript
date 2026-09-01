@@ -25,6 +25,46 @@
                 })
             })
         })
+
+
+        // console.log("Coustomer enters resturent");
+        // setTimeout(()=>{
+        //     console.log("waiter takes order");
+        //     setTimeout(()=>{
+        //         console.log("chef start cooking")
+        //         setTimeout(()=>{
+        //             console.log("food is ready")
+        //             setTimeout(()=>{
+        //                 console.log("waiter serve food")
+        //                 setTimeout(()=>{
+        //                     console.log("customer start eating")
+        //                     setTimeout(()=>{
+        //                         console.log("customer pays bill")
+        //                     },1000)
+        //                 },1000)
+        //             },1000)
+        //         },1000)
+        //     },1000)
+        // },1000)
+
+        // example for promise
+
+        function step(message,time){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log(message)
+                    resolve()
+                },time)
+            })
+        }
+        step("customer enters resturant",1000)
+        .then(()=>step("waiter takes order",1000))
+        .then(()=>step("chef starts cooking",1000))
+        .then(()=>step("food is ready",1000))
+        .then(()=>step("waiter serve food",1000))
+        .then(()=>step("customer starts eating",1000))
+        .then(()=>step("customer pays the bills",1000))
+        .catch((error)=>console.error("error",error))
     </script>
 </body>
 </html>
